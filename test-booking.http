@@ -1,0 +1,52 @@
+### Create a new booking
+POST http://localhost:5000/api/bookings
+Content-Type: application/json
+
+{
+  "booking_id": "RH-00001",
+  "booking_type": "online",
+  "guest_name": "Test Guest",
+  "phone": "1234567890",
+  "designation": "Engineer",
+  "guest_type": "ZP Officer",
+  "resthouse_id": 1,
+  "room_id": 1,
+  "checkin_date": "2025-07-01",
+  "checkout_date": "2025-07-03",
+  "total_days": 2,
+  "total_guests": 1,
+  "amount": 300.00,
+  "payment_mode": "Cash",
+  "operator_name": "admin"
+}
+
+### Get all bookings
+GET http://localhost:5000/api/bookings
+
+### Get booking by ID (replace 1 with actual ID)
+GET http://localhost:5000/api/bookings/1
+
+### Update booking (replace 1 with actual ID)
+PUT http://localhost:5000/api/bookings/1
+Content-Type: application/json
+
+{
+  "booking_id": "RH-00001",
+  "booking_type": "online",
+  "guest_name": "Test Guest Updated",
+  "phone": "1234567890",
+  "designation": "Manager",
+  "guest_type": "Press",
+  "resthouse_id": 1,
+  "room_id": 1,
+  "checkin_date": "2025-07-01",
+  "checkout_date": "2025-07-03",
+  "total_days": 2,
+  "total_guests": 2,
+  "amount": 500.00,
+  "payment_mode": "Online",
+  "operator_name": "admin"
+}
+
+### Delete booking (replace 1 with actual ID)
+DELETE http://localhost:5000/api/bookings/1 

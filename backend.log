@@ -1,0 +1,27 @@
+
+> eresthouse-backend@1.0.0 dev
+> nodemon app.js
+
+[33m[nodemon] 3.1.10[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,cjs,json[39m
+[32m[nodemon] starting `node app.js`[39m
+[dotenv@17.0.0] injecting env (5) from .env – 🔐 encrypt with dotenvx: https://dotenvx.com
+Server is running on http://localhost:5000
+F:\ZPBuilder\Builder-glow-realm-main\eresthouse-backend\node_modules\mysql2\lib\base\connection.js:200
+    const err = new Error('connect ETIMEDOUT');
+                ^
+
+Error: connect ETIMEDOUT
+    at PoolConnection._handleTimeoutError (F:\ZPBuilder\Builder-glow-realm-main\eresthouse-backend\node_modules\mysql2\lib\base\connection.js:200:17)
+    at listOnTimeout (node:internal/timers:588:17)
+    at process.processTimers (node:internal/timers:523:7) {
+  errorno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  syscall: 'connect',
+  fatal: true
+}
+
+Node.js v22.17.0
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
