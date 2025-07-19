@@ -7,7 +7,7 @@ const generateChallanPDF = async (req, res) => {
 
     // Send HTML/CSS to Flask service
     const flaskRes = await axios.post(
-      'http://127.0.0.1:5001/generate-pdf',
+      'https://pdf-service-wu9d.onrender.com/generate-pdf',
       { html, css },
       { responseType: 'arraybuffer' }
     );
